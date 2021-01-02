@@ -1,0 +1,51 @@
+@import "theme/colors.scss";
+.cart-table{
+    margin: 10px 0px 10px 0px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.total-div{
+    display: flex;
+}
+.total-price{
+    position: absolute;
+    right: 0px;
+    padding-right: 30px;
+}
+.price-txt{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.small-img{
+    width: 150px;
+    height: 100px;
+}
+.pointer{
+    cursor: pointer;
+}
+.empty-cart-img{
+    width: 100%;
+    height: 100%;
+}
+.continue-shopping{
+    background: $color-primary-dark;
+    color: $color-primary;
+    padding: 15px;
+    border:1px solid $color-dark;
+    border-radius: 3px;
+}
+
+.continue-shopping:hover{
+    color: $color-primary;
+}
+.loader{
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif') 
+                50% 50% no-repeat rgb(249,249,249);
+  }

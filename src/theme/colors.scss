@@ -1,0 +1,14 @@
+$color-primary: #f5f5f5;
+$color-primary-dark: #044bd9;
+$color-secondary: black;
+$color-dark: #000000;
+$color-grey: rgba(212, 185, 185, 0.8);
+$color-error: red;
+
+:export {
+  primaryColor: $color-primary;
+  primaryDarkColor: $color-primary-dark;
+  secondaryColor: $color-secondary;
+  darkColor: $color-dark;
+  greyColor: $color-grey;
+}

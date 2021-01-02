@@ -1,0 +1,63 @@
+@import "theme/colors.scss";
+.btn-incDec{
+    text-align: center;
+}
+.inc-btn{
+    padding: 10px;
+    color: $color-secondary;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid $color-grey;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+
+}
+.dec-btn{
+    padding: 10px;
+    color: $color-secondary;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid $color-grey;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+
+.incDec-value{
+    border-top: 1px solid $color-grey;
+    border-bottom: 1px solid $color-grey;
+    padding: 10px;
+}
+
+.inc-btn:hover{
+    background-color: gray;
+    color: white;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.dec-btn:hover{
+    background-color: gray;
+    color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+
+.inc-btn:active {
+    background-color: gray;
+    color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid red;
+}
+
+
+.dec-btn:active {
+    background-color: gray;
+    color: white;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid green;
+}
