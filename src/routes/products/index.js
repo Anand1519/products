@@ -18,11 +18,6 @@ class Products extends Component {
         const products = await getAllProducts();
         this.setState({products})
     }
-    componentDidUpdate(preProps, preState){
-      if(this.props.cart !== preProps.cart){
-        localStorage.setItem("cart", JSON.stringify(this.props.cart))
-      }
-    }
   render() {
     return (
       <Container fluid={true}>

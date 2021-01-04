@@ -1,17 +1,9 @@
 import { Increase_Cart_Item, Decrease_Cart_Item, Add_To_Cart, Remove_To_Cart, Increase_Cart_Item_By_Pro, Decrease_Cart_Item_By_Pro, Remove_To_Cart_By_Pro } from "store/actionType/index"
+import { getFromStorage } from "localStore";
 
-var cartList = [];
-try{
-    const data = localStorage.getItem("cart")??[]
-    cartList = JSON.parse(data)
-    console.log("cartList", cartList)
-} 
-catch{
-    cartList = []   
-}
+const initialData = getFromStorage("cart");
 
-
-export default function cart(carts = cartList, action) {
+export default function cart(carts = initialData , action) {
     var index,product;
     try{
         switch (action.type) {

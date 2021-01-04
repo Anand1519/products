@@ -9,11 +9,6 @@ import { Link } from 'react-router-dom';
 import { RemoveToCartByPro } from 'store/action/cart';
 
 class CartTable extends Component {
-      componentDidUpdate(preProps, preState){
-        if(this.props.cart !== preProps.cart){
-          localStorage.setItem("cart", JSON.stringify(this.props.cart))
-        }
-      }
   render() {
     const { cart: products = [], remove } = this.props; 
     return (
